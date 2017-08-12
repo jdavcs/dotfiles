@@ -1,11 +1,14 @@
 [user]
     name = "Sergey Golitsynskiy"
     email = sgolitsynskiy@gmail.com
+
 [color]
     ui = auto
+
 [core]
     editor = vim
 	autocrlf = input
+	excludesfile = gitignore_global
 
 [alias]
     st = status
@@ -17,7 +20,10 @@
     unstage = reset HEAD --
     last = log -1 HEAD
     graph = log --oneline --decorate --graph --all 
+    
 [diff]
+
 	submodule = log
+
 [push]
 	recurseSubmodules = check
