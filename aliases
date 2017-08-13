@@ -27,7 +27,6 @@ alias h=history
 alias c=clear
 alias cll='c;ll'
 alias v=vi
-alias g=git
 alias py=python3
 alias py2=python2
 alias py35=python3.5
