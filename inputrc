@@ -1,8 +1,11 @@
+# Include any system-wide bindings and variable assignments
+$include /etc/inputrc
+
+#set vi mode
 set editing-mode vi
 
 $if mode=vi
-
+#disable 'v' shortcut (normal mode) that launches an editor
 set keymap vi-command
 "v": ""
-
 $endif
