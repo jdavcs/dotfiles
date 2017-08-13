@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias -- -='cd -'  # escape dash with --
+
+# Enable aliases to be sudo’ed
+alias sudu='sudo '
+
+# Add verbose to all; prompt once for rm
+alias mv='mv -v'
+alias rm='rm -I -v'
+alias cp='cp -v'
+
+# ls shortcuts
+alias ls='ls --color=auto'
+alias ll='ls -l --group-directories-first'
+alias llt='ls -lt --group-directories-first' #sort by modification date
+alias la='ls -la --group-directories-first'
+alias l='ls --group-directories-first'
+
+# Misc shortcuts
+alias h=history
+alias c=clear
+alias cll='c;ll'
+alias v=vi
+alias g=git
+alias py=python3
+alias py2=python2
+alias py35=python3.5
+alias t='tree --noreport'
+alias chrome='google-chrome-stable'
+alias grep='grep -E --color=auto'
+
+#distraction-free writing 
+alias wp='gnome-terminal --window-with-profile=writingbg & --maximize &
+--hide-menubar gnome-terminal --window-with-profile=writing &
+--geometry=100x75 --hide-menubar & exit'
+
+# virtualenv/virtualenvwrapper:
+if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
+        export WORKON_HOME="${HOME}/.virtualenvs"
+        source /usr/local/bin/virtualenvwrapper.sh
+        alias v='workon'
+        alias v.d='deactivate'
+        alias v.mk='mkvirtualenv'
+        alias v.rm='rmvirtualenv'
+        alias v.cd='cdvirtualenv'
+        alias v.ls='lsvirtualenv'
+fi
