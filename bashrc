@@ -24,7 +24,7 @@ if [[ -f ~/.bashrc-local ]]; then
 fi
 
 # Load git completions
-. ~/git-completion.bash
+. ~/${DOTFILES}/git-completion.bash
 
 # Load solarized colors for ls
 eval $(dircolors ~/.dircolors)

@@ -30,5 +30,3 @@ make_homedir_link .gitconfig gitconfig
 make_homedir_link .inputrc inputrc
 make_homedir_link .vimrc vimrc
 make_homedir_link .vim "${VIMDIR}"
-make_homedir_link git-completion.bash
-make_homedir_link git-prompt.sh
