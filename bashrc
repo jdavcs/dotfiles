@@ -28,3 +28,4 @@ fi
 
 # Load solarized colors for ls
 eval $(dircolors ~/.dircolors)
+
