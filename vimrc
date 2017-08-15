@@ -10,6 +10,11 @@ if !exists("g:syntax_on")
     syntax enable
 endif
 
+" tmux sets bg=light
+if $TERM == 'screen-256color'
+    set background=dark 
+endif
+
 filetype plugin on
 filetype indent on
 
