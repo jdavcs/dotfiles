@@ -71,6 +71,9 @@ inoremap jk <Esc>
 " use single quote (or back tick) to go back to mark
 nnoremap ' `
 
+" yank to end of line
+nnoremap Y y$
+
 " hit enter to clear last search pattern
 nnoremap <silent> <CR> :let @/ = ""<CR>
 
