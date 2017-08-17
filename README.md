@@ -23,4 +23,4 @@ Ideas, code and inspiration came from -
 * ...and many others
 
 ## Licence
-
+[MIT](https://github.com/sgolitsynskiy/dotfiles/blob/master/LICENSE)
