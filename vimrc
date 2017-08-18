@@ -153,3 +153,12 @@ if !exists(":NNN")
     command NNN set foldcolumn=0
 endif
 " }}}1
+
+" Plugin settings {{{1
+
+" Timestamp {{{2
+nnoremap <silent><localleader>ti :TimestampInsert<CR>
+nnoremap <silent><localleader>tu :TimestampUpdate<CR>
+" }}}2
+
+" }}}1

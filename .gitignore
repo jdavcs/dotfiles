@@ -1,3 +1,4 @@
 # Ignore vim plugin repos that I work on separately
 vim/bundle/vim-write
 vim/bundle/vim-journal
+vim/bundle/vim-timestamp
