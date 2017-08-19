@@ -161,4 +161,10 @@ nnoremap <silent><localleader>ti :TimestampInsert<CR>
 nnoremap <silent><localleader>tu :TimestampUpdate<CR>
 " }}}2
 
+" Write {{{2
+nnoremap <silent><localleader>ww :WriteToggleWritingMode<CR>
+nnoremap <silent><localleader>nn :WriteToggleLineNumbers<CR>
+nnoremap <silent><localleader>nf :set foldcolumn=0<CR>
+" }}}2
+
 " }}}1
