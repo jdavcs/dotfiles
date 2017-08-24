@@ -162,9 +162,11 @@ nnoremap <silent><localleader>tu :TimestampUpdate<CR>
 " }}}2
 
 " Write {{{2
-nnoremap <silent><localleader>ww :WriteToggleWritingMode<CR>
-nnoremap <silent><localleader>nn :WriteToggleLineNumbers<CR>
-nnoremap <silent><localleader>nf :set foldcolumn=0<CR>
+nnoremap <silent><leader>ww :WriteToggleWritingMode<CR>
+nnoremap <silent><leader>nn :WriteToggleLineNumbers<CR>
+nnoremap <silent><leader>nf :set foldcolumn=0<CR>
+
+"let g:write_background = 'light'
 " }}}2
 
 " }}}1
