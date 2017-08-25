@@ -156,17 +156,35 @@ endif
 
 " Plugin settings {{{1
 
-" Timestamp {{{2
+" vim-timestamp {{{2
 nnoremap <silent><localleader>ti :TimestampInsert<CR>
 nnoremap <silent><localleader>tu :TimestampUpdate<CR>
 " }}}2
 
-" Write {{{2
+" vim-write {{{2
 nnoremap <silent><leader>ww :WriteToggleWritingMode<CR>
 nnoremap <silent><leader>nn :WriteToggleLineNumbers<CR>
 nnoremap <silent><leader>nf :set foldcolumn=0<CR>
 
 "let g:write_background = 'light'
+" }}}2
+
+" vim-journal {{{2
+
+augroup vim_journal
+    autocmd!
+    " setup mappings
+    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jd :JournalInsertDate<CR>i
+    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jt :JournalInsertTodo<CR>a
+    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jsm :JournalMakeSummaries<CR>
+
+    " add your custom terms; this MUST be inside a filetype autocmd:
+    " if called for any file, the vim-journal filetype plugin won't be loaded.
+    autocmd FileType journal call journal#addterm("IDEA",        "<LocalLeader>ji", "Identifier")
+    autocmd FileType journal call journal#addterm("THOUGHT",     "<LocalLeader>jh", "Constant")
+    autocmd FileType journal call journal#addterm("OBSERVATION", "<LocalLeader>jo", "Underlined")
+augroup END
+
 " }}}2
 
 " }}}1
