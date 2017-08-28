@@ -42,6 +42,7 @@ set listchars=tab:\ \ ,trail:·     " display tabs and trailing spaces
 set nolist          " toggle to display: if on, typing is annoying
 set nowrap          " do not wrap lines
 set scrolloff=3     " more context around cursor
+set formatlistpat+=\\\|^\\*\\s*   " prevent reformatting of * bullets
  
 set expandtab       " use spaces instead of tabs in I mode
 set tabstop=4       " spaces in a tab
