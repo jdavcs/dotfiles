@@ -22,5 +22,5 @@ Ideas, code and inspiration came from -
 * [Tony Narlock](https://leanpub.com/the-tao-of-tmux/read)
 * ...and many others
 
-## Licence
+## License
 [MIT](https://github.com/sgolitsynskiy/dotfiles/blob/master/LICENSE)
