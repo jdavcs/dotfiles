@@ -32,6 +32,7 @@ alias py35=python3.5
 alias t='tree --noreport'
 alias chrome='google-chrome-stable'
 alias grep='grep -E --color=auto'
+alias pip=pip3  #use pip3 by default; use pip2 for python2.x
 
 #distraction-free writing 
 alias wp='gnome-terminal --window-with-profile=writingbg & --maximize &
@@ -40,12 +41,10 @@ alias wp='gnome-terminal --window-with-profile=writingbg & --maximize &
 
 # virtualenv/virtualenvwrapper:
 if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
-        export WORKON_HOME="${HOME}/.virtualenvs"
-        source /usr/local/bin/virtualenvwrapper.sh
-        alias v='workon'
-        alias v.d='deactivate'
-        alias v.mk='mkvirtualenv'
-        alias v.rm='rmvirtualenv'
-        alias v.cd='cdvirtualenv'
-        alias v.ls='lsvirtualenv'
+		alias v='workon'
+		alias v.d='deactivate'
+		alias v.mk='mkvirtualenv'
+		alias v.rm='rmvirtualenv'
+		alias v.cd='cdvirtualenv'
+		alias v.ls='lsvirtualenv'
 fi

@@ -29,3 +29,19 @@ fi
 # Load solarized colors for ls
 eval $(dircolors ~/.dircolors)
 
+# pip bash completion start
+_pip_completion()
+{
+    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
+                   COMP_CWORD=$COMP_CWORD \
+                   PIP_AUTO_COMPLETE=1 $1 ) )
+}
+complete -o default -F _pip_completion pip
+# pip bash completion end
+
+# virtualenv/virtualenvwrapper:
+if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
+		export WORKON_HOME="${HOME}/.virtualenvs"
+		export PROJECT_HOME="${HOME}/0dev"
+		source /usr/local/bin/virtualenvwrapper.sh
+fi
