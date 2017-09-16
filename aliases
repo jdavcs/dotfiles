@@ -27,6 +27,7 @@ alias h=history
 alias c=clear
 alias cll='c;ll'
 alias py=python3
+alias python=python3
 alias py2=python2
 alias py35=python3.5
 alias t='tree --noreport'
