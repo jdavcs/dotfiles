@@ -48,4 +48,5 @@ if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
 		alias v.rm='rmvirtualenv'
 		alias v.cd='cdvirtualenv'
 		alias v.ls='lsvirtualenv'
+		alias v.sp='setvirtualenvproject'
 fi
