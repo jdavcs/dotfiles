@@ -190,7 +190,7 @@ augroup END
 
 " vim-syntastic {{{2
 " only show error messages, supress the rest
-let g:syntastic_quiet_messages = { "!level": "errors" }
+" let g:syntastic_quiet_messages = { "!level": "errors" }
 " }}}2
 
 " }}}1
