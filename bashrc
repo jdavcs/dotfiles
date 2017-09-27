@@ -42,6 +42,6 @@ complete -o default -F _pip_completion pip
 # virtualenv/virtualenvwrapper:
 if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
 		export WORKON_HOME="${HOME}/.virtualenvs"
-		export PROJECT_HOME="${HOME}/0dev"
+		export PROJECT_HOME="${HOME}/0dev/pythonvw_projects"
 		source /usr/local/bin/virtualenvwrapper.sh
 fi
