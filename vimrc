@@ -136,7 +136,7 @@ augroup misc_settings
     autocmd FileType vim setlocal foldmethod=marker
     autocmd FileType gitcommit setlocal textwidth=72
     autocmd FileType sh setlocal ts=2 sw=2 sts=2 noexpandtab
-    autocmd FileType html,xml,javascript setlocal ts=2 sw=2 sts=2 
+    autocmd FileType html,xml,javascript,pug setlocal ts=2 sw=2 sts=2 
 augroup END
 " }}}1
 
