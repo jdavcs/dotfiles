@@ -75,6 +75,10 @@ nnoremap ' `
 " yank to end of line
 nnoremap Y y$
 
+" home + end
+nnoremap H ^
+nnoremap L $
+
 " hit enter to clear last search pattern
 nnoremap <silent> <CR> :let @/ = ""<CR>
 
