@@ -32,3 +32,8 @@
 	path = vim/bundle/vim-pug
 	url = git@github.com:digitaltoad/vim-pug.git
 	ignore = untracked
+    
+[submodule "vim/bundle/typescript-vim"]
+	path = vim/bundle/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+	ignore = untracked
