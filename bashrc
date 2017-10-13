@@ -45,3 +45,5 @@ if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
 		export PROJECT_HOME="${HOME}/0dev/pythonvw_projects"
 		source /usr/local/bin/virtualenvwrapper.sh
 fi
+
+echo -e -n "\x1b[\x35 q" # changes to blinking bar
