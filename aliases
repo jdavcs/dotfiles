@@ -21,6 +21,7 @@ alias ll='ls -l --group-directories-first'
 alias llt='ls -lt --group-directories-first' #sort by modification date
 alias la='ls -la --group-directories-first'
 alias l='ls --group-directories-first'
+alias llx='ls -lX' #sort by extension
 
 # Misc shortcuts
 alias h=history
