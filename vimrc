@@ -63,6 +63,18 @@ set wildmode=list:longest
 "helps when maximizing other splits
 set winminwidth=0   
 set winminheight=0
+
+" Set permanent cursor color
+if &term =~ "xterm\\|rxvt"
+" use an orange cursor in insert mode
+let &t_SI = "\<Esc>]12;orange\x7"
+" use a red cursor otherwise
+let &t_EI = "\<Esc>]12;red\x7"
+silent !echo -ne "\033]12;red\007"
+" reset cursor when vim exits
+autocmd VimLeave * silent !echo -ne "\033]112\007"
+" use \003]12;gray\007 for gnome-terminal
+endif
 " }}}
 
 " Mappings {{{1
@@ -140,7 +152,7 @@ augroup misc_settings
     autocmd FileType vim setlocal foldmethod=marker
     autocmd FileType gitcommit setlocal textwidth=72
     autocmd FileType sh setlocal ts=2 sw=2 sts=2 noexpandtab
-    autocmd FileType html,xml,javascript,pug setlocal ts=2 sw=2 sts=2 
+    autocmd FileType html,xml,javascript,pug,typescript setlocal ts=2 sw=2 sts=2 
 augroup END
 " }}}1
 
@@ -198,3 +210,4 @@ augroup END
 " }}}2
 
 " }}}1
+
