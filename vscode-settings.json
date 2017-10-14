@@ -1,0 +1,19 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.startupEditor": "welcomePage",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {   "before": ["H"],
+            "after": ["^"]
+        },
+        {   "before": ["L"],
+            "after": ["$"]
+        }
+    ]
+}
