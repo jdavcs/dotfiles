@@ -12,7 +12,7 @@ alias sudu='sudo '
 
 # Add verbose to all; prompt once for rm
 alias mv='mv -v'
-alias rm='rm -I -v'
+# alias rm='rm -I -v'
 alias cp='cp -v'
 
 # ls shortcuts
@@ -31,7 +31,7 @@ alias py=python3
 alias python=python3
 alias py2=python2
 alias py35=python3.5
-alias t='tree --noreport'
+alias t='tree --noreport --dirsfirst'
 alias chrome='google-chrome-stable'
 alias grep='grep -E --color=auto'
 alias pip=pip3  #use pip3 by default; use pip2 for python2.x
