@@ -133,9 +133,8 @@ nnoremap <End> :echoe "must use $"<CR>
 " Autocommands {{{1
 augroup my_filetypedetect 
     autocmd!
-    au BufNewFile,BufRead *.html setf xml  " until I find a better syntax file
+    " au BufNewFile,BufRead *.html setf xml  " until I find a better syntax file (but still not sure)
     au BufNewFile,BufRead *.wsgi set filetype=python
-    au BufRead,BufNewFile *.twig set filetype=html
     au BufRead,BufNewFile gitconfig set filetype=gitconfig
 augroup END
 
@@ -152,8 +151,8 @@ augroup misc_settings
     autocmd FileType vim setlocal foldmethod=marker
     autocmd FileType gitcommit setlocal textwidth=72
     autocmd FileType sh setlocal ts=2 sw=2 sts=2 noexpandtab
-    autocmd FileType html,xml,javascript,pug,typescript,yaml,css,scss setlocal ts=2 sw=2 sts=2 
-    autocmd FileType html,markdown setlocal tw=100
+    autocmd FileType html,markdown,liquid setlocal tw=100
+    autocmd FileType html,xml,css,scss,javascript,typescript,pug,yaml,markdown,liquid setlocal ts=2 sw=2 sts=2 
 augroup END
 " }}}1
 
