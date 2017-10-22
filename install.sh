@@ -32,3 +32,4 @@ make_homedir_link .vimrc vimrc
 make_homedir_link .vim "${VIMDIR}"
 make_homedir_link .tmux.conf tmux.conf
 make_homedir_link .pylintrc pylintrc
+make_homedir_link .irbrc irbrc
