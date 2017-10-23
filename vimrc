@@ -91,6 +91,9 @@ nnoremap Y y$
 nnoremap H ^
 nnoremap L $
 
+" move to end of line before joining 
+nnoremap J $J
+
 " hit enter to clear last search pattern
 nnoremap <silent> <CR> :let @/ = ""<CR>
 
@@ -152,7 +155,7 @@ augroup misc_settings
     autocmd FileType gitcommit setlocal textwidth=72
     autocmd FileType sh setlocal ts=2 sw=2 sts=2 noexpandtab
     autocmd FileType html,markdown,liquid setlocal tw=100
-    autocmd FileType html,xml,css,scss,javascript,typescript,pug,yaml,markdown,liquid setlocal ts=2 sw=2 sts=2 
+    autocmd FileType html,xml,css,scss,javascript,typescript,pug,yaml,markdown,liquid,ruby setlocal ts=2 sw=2 sts=2 
 augroup END
 " }}}1
 
