@@ -194,8 +194,8 @@ nnoremap <silent><leader>nf :set foldcolumn=0<CR>
 augroup vim_journal
     autocmd!
     " setup mappings
-    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jd :JournalInsertDate<CR>i
-    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jt :JournalInsertTodo<CR>a
+    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jd :JournalInsertDate<CR>zzi
+    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jt :JournalInsertTodo<CR>zza
     autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jsm :JournalMakeSummaries<CR>
 
     " add your custom terms; this MUST be inside a filetype autocmd:
