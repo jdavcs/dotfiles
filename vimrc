@@ -139,6 +139,7 @@ augroup my_filetypedetect
     " au BufNewFile,BufRead *.html setf xml  " until I find a better syntax file (but still not sure)
     au BufNewFile,BufRead *.wsgi set filetype=python
     au BufRead,BufNewFile gitconfig set filetype=gitconfig
+    au BufNewFile,BufRead *.ejs set filetype=html
 augroup END
 
 augroup insert_comment
