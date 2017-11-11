@@ -47,3 +47,9 @@ if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
 fi
 
 #echo -e -n "\x1b[\x35 q" # changes to blinking bar
+
+#nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
