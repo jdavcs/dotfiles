@@ -131,6 +131,9 @@ nnoremap <PageUp> :echoe "must use CTRL-b"<CR>
 nnoremap <PageDown> :echoe "must use CTRL-f"<CR>
 nnoremap <Home> :echoe "must use 0"<CR>
 nnoremap <End> :echoe "must use $"<CR>
+
+"reindent file, then go back to where you were
+nnoremap <F7> mqgg=G`q
 " }}}1
 
 " Autocommands {{{1
