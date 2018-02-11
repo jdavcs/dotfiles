@@ -114,6 +114,12 @@ nnoremap <silent> <C-j> :wincmd j<CR>
 nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
 
+" split resizing
+nnoremap <silent> <C-Right> :vertical res +1<CR>
+nnoremap <silent> <C-Left>  :vertical res -1<CR>
+nnoremap <silent> <C-Up>    :res +1<CR>
+nnoremap <silent> <C-Down>  :res -1<CR>
+
 " add semicolumn at end of line without moving cursor
 nnoremap <Leader>; mqA;<esc>`q
 
