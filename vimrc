@@ -64,6 +64,11 @@ set wildmode=list:longest
 set winminwidth=0   
 set winminheight=0
 
+"enable mouse for all modes (primarily to resize splits)
+set mouse=a
+"add this to enable mouse in Tmux
+set ttymouse=xterm2
+
 " Set permanent cursor color
 " if &term =~ "xterm\\|rxvt"
     " use an orange cursor in insert mode
