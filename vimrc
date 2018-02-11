@@ -2,6 +2,7 @@
 " Author  : Sergey Golitsynskiy <sgolitsynskiy@gmail.com>
 " License : MIT
 
+
 execute pathogen#infect()
 
 if !exists("g:syntax_on")
@@ -16,6 +17,15 @@ colorscheme solarized
 " tmux sets bg=light
 if $TERM == 'screen-256color'
     set background=dark 
+endif
+
+" tmux setting to enable Vim CTRL-arrow key sequences under Tmux
+if &term =~ '^screen'
+    " tmux will send xterm-style keys when xterm-keys is on
+    execute "set <xUp>=\e[1;*A"
+    execute "set <xDown>=\e[1;*B"
+    execute "set <xRight>=\e[1;*C"
+    execute "set <xLeft>=\e[1;*D"
 endif
 
 let mapleader = ","      " set Leader
