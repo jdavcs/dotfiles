@@ -42,3 +42,8 @@
 	path = vim/bundle/vim-liquid
     url = git@github.com:tpope/vim-liquid.git
 	ignore = untracked
+
+[submodule "vim/bundle/MatchTag"]
+	path = vim/bundle/MatchTag
+    url = git@github.com:gregsexton/MatchTag.git
+	ignore = untracked
