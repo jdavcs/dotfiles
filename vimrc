@@ -19,6 +19,8 @@ if $TERM == 'screen-256color'
     set background=dark 
 endif
 
+
+
 " tmux setting to enable Vim CTRL-arrow key sequences under Tmux
 if &term =~ '^screen'
     " tmux will send xterm-style keys when xterm-keys is on
@@ -192,6 +194,12 @@ endif
 if !exists(":NNN")
     command NNN set foldcolumn=0
 endif
+
+" make MatchParen use more subtle colors (can't make it auto-load with vimrc)
+if !exists(":MP")
+    command MP hi MatchParen cterm=NONE ctermbg=NONE ctermfg=10
+endif
+
 " }}}1
 
 " Plugin settings {{{1
@@ -233,4 +241,3 @@ augroup END
 " }}}2
 
 " }}}1
-
