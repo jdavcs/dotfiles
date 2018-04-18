@@ -198,7 +198,7 @@ endif
 " make MatchParen use more subtle colors (can't make it auto-load with vimrc)
 if !exists(":MP")
     "command MP hi MatchParen cterm=NONE ctermbg=NONE ctermfg=10
-    command MP hi MatchParen ctermfg=10 ctermbg=38 
+    command MP hi MatchParen ctermbg=10 ctermfg=LightBlue
 endif
 
 " }}}1
