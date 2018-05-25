@@ -19,7 +19,7 @@ export IGNOREEOF=1
 export HISTTIMEFORMAT='%h %d %H:%M  '
 
 # Lines/commands stored
-export HISTSIZE=100000 # in history list: in memory during session
+export HISTSIZE=10000 # in history list: in memory during session
 export HISTFILESIZE="${HISTSIZE}" # in history file: on disk
 
 # Do not store duplicates and commands that begin with a space
