@@ -59,3 +59,6 @@ if [ -f '/home/sergey/Desktop/google-cloud-sdk/path.bash.inc' ]; then source '/h
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/sergey/Desktop/google-cloud-sdk/completion.bash.inc' ]; then source '/home/sergey/Desktop/google-cloud-sdk/completion.bash.inc'; fi
+
+# because too many cows.
+export ANSIBLE_NOCOWS=1
