@@ -27,7 +27,9 @@ fi
 . ~/${DOTFILES}/git-completion.bash
 
 # Load solarized colors for ls
-eval $(dircolors ~/.dircolors)
+if [[ "$OSTYPE" != "darwin"* ]]; then
+	eval $(dircolors ~/.dircolors)
+fi
 
 # pip bash completion start
 _pip_completion()
