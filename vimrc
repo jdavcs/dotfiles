@@ -75,6 +75,8 @@ set wildmode=list:longest
 set winminwidth=0   
 set winminheight=0
 
+set ruler "status line
+
 " Set permanent cursor color
 " if &term =~ "xterm\\|rxvt"
     " use an orange cursor in insert mode
