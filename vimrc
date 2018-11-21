@@ -2,7 +2,6 @@
 " Author  : Sergey Golitsynskiy <sgolitsynskiy@gmail.com>
 " License : MIT
 
-
 execute pathogen#infect()
 
 if !exists("g:syntax_on")
@@ -122,11 +121,19 @@ nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
 
 " split resizing
-nnoremap <silent> <C-Right> :vertical res +1<CR>
-nnoremap <silent> <C-Left>  :vertical res -1<CR>
-nnoremap <silent> <C-Up>    :res +1<CR>
-nnoremap <silent> <C-Down>  :res -1<CR>
+if stridx(system('uname -a'), 'Darwin') > -1
+    nnoremap <silent> <C-S-Right> :vertical res +1<CR>
+    nnoremap <silent> <C-S-Left>  :vertical res -1<CR>
+    nnoremap <silent> <C-S-Up>    :res +1<CR>
+    nnoremap <silent> <C-S-Down>  :res -1<CR>
+else
+    nnoremap <silent> <C-Right> :vertical res +1<CR>
+    nnoremap <silent> <C-Left>  :vertical res -1<CR>
+    nnoremap <silent> <C-Up>    :res +1<CR>
+    nnoremap <silent> <C-Down>  :res -1<CR>
+endif
 
+    
 " add semicolumn at end of line without moving cursor
 nnoremap <Leader>; mqA;<esc>`q
 

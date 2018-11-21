@@ -16,12 +16,20 @@ alias mv='mv -v'
 alias cp='cp -v'
 
 # ls shortcuts
-alias ls='ls --color=auto'
-alias ll='ls -l --group-directories-first'
-alias llt='ls -lt --group-directories-first' #sort by modification date
-alias la='ls -la --group-directories-first'
-alias l='ls --group-directories-first'
-alias llx='ls -lX' #sort by extension
+# TODO improve this
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	alias ls='gls'
+	alias ls='ls -G'
+	alias ll='ls -l'
+	alias la='gls -la --group-directories-first --color=auto'
+else
+	alias ls='ls --color=auto'
+	alias ll='ls -l --group-directories-first'
+	alias llt='ls -lt --group-directories-first' #sort by modification date
+	alias la='ls -la --group-directories-first'
+	alias l='ls --group-directories-first'
+	alias llx='ls -lX' #sort by extension
+fi
 
 # Misc shortcuts
 alias h=history
