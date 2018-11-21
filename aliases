@@ -17,6 +17,7 @@ alias cp='cp -v'
 
 # ls shortcuts
 # TODO improve this
+alias l='ls -Gl'
 if [[ "$OSTYPE" == "darwin"* ]]; then
 	alias ls='gls'
 	alias ls='ls -G'
