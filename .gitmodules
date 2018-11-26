@@ -52,3 +52,8 @@
 	path = vim/bundle/vim-scala
     url = git@github.com:derekwyatt/vim-scala.git
 	ignore = untracked
+
+[submodule "vim/bundle/Vim-Jinja2-Syntax"]
+	path = vim/bundle/Vim-Jinja2-Syntax
+	url = https://github.com/Glench/Vim-Jinja2-Syntax
+	ignore = untracked

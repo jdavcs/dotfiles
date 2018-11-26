@@ -16,25 +16,33 @@ alias mv='mv -v'
 alias cp='cp -v'
 
 # ls shortcuts
-alias ls='ls --color=auto'
-alias ll='ls -l --group-directories-first'
-alias llt='ls -lt --group-directories-first' #sort by modification date
-alias la='ls -la --group-directories-first'
-alias l='ls --group-directories-first'
-alias llx='ls -lX' #sort by extension
+# TODO improve this
+alias l='ls -Gl'
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	alias ls='gls'
+	alias ls='ls -G'
+	alias ll='ls -l'
+	alias la='gls -la --group-directories-first --color=auto'
+else
+	alias ls='ls --color=auto'
+	alias ll='ls -l --group-directories-first'
+	alias llt='ls -lt --group-directories-first' #sort by modification date
+	alias la='ls -la --group-directories-first'
+	alias l='ls --group-directories-first'
+	alias llx='ls -lX' #sort by extension
+fi
 
 # Misc shortcuts
 alias h=history
 alias c=clear
 alias cll='c;ll'
 alias py=python3
-alias python=python3
 alias py2=python2
 alias py35=python3.5
 alias t='tree --noreport --dirsfirst'
 alias chrome='google-chrome-stable'
 alias grep='grep -E --color=auto'
-alias pip=pip3  #use pip3 by default; use pip2 for python2.x
+alias pip=pip2 #use pip2 by default; pip3 for python3
 
 #distraction-free writing 
 alias wp='gnome-terminal --window-with-profile=writingbg & --maximize &
