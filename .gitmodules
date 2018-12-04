@@ -57,3 +57,8 @@
 	path = vim/bundle/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax
 	ignore = untracked
+
+[submodule "vim/bundle/vim-bundle-mako"]
+	path = vim/bundle/vim-bundle-mako
+	url = https://github.com/sophacles/vim-bundle-mako
+	ignore = untracked
