@@ -19,18 +19,16 @@ alias cp='cp -v'
 # TODO improve this
 alias l='ls -Gl'
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	alias ls='gls'
-	alias ls='ls -G'
-	alias ll='ls -l'
-	alias la='gls -la --group-directories-first --color=auto'
+	alias l='gls --color=always --group-directories-first'
 else
-	alias ls='ls --color=auto'
-	alias ll='ls -l --group-directories-first'
-	alias llt='ls -lt --group-directories-first' #sort by modification date
-	alias la='ls -la --group-directories-first'
-	alias l='ls --group-directories-first'
-	alias llx='ls -lX' #sort by extension
+	alias l='ls --color=always --group-directories-first'
 fi
+
+alias ls='l'
+alias ll='ls -l'
+alias la='ls -la'
+alias llx='ls -lX' #sort by extention
+alias llt='ls -lt' #sort by modification date
 
 # Misc shortcuts
 alias h=history
