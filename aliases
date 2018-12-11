@@ -20,11 +20,12 @@ alias cp='cp -v'
 alias l='ls -Gl'
 if [[ "$OSTYPE" == "darwin"* ]]; then
 	alias l='gls --color=always --group-directories-first'
+	alias ls='l'
 else
 	alias l='ls --color=always --group-directories-first'
+	alias ls='ls --color=always --group-directories-first'
 fi
 
-alias ls='l'
 alias ll='ls -l'
 alias la='ls -la'
 alias llx='ls -lX' #sort by extention
