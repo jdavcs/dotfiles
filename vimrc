@@ -18,7 +18,8 @@ if $TERM == 'screen-256color'
     set background=dark 
 endif
 
-
+"fix this (must set on the vm)
+set background=dark 
 
 " tmux setting to enable Vim CTRL-arrow key sequences under Tmux
 if &term =~ '^screen'
