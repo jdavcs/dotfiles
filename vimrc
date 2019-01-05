@@ -45,7 +45,6 @@ set smartcase       " do not ignore case if pattern contains uppercase letter
 set hlsearch        " highlight search matches
 set number          " line numbers
 set autoindent      " use current indent on new line
-set smartindent
 set pastetoggle=<F2>    " paste mode on/off
 set display+=lastline 	" display incomplete last line (not @@@)
 set history=1000    "history == good
