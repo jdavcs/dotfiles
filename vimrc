@@ -217,6 +217,9 @@ endif
 
 " Plugin settings {{{1
 
+" don't need double indent after open paren in python
+let g:pyindent_open_paren = '&sw'
+
 " vim-timestamp {{{2
 nnoremap <silent><localleader>ti :TimestampInsert<CR>
 nnoremap <silent><localleader>tu :TimestampUpdate<CR>
