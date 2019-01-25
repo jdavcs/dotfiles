@@ -41,7 +41,6 @@ alias py35=python3.5
 alias t='tree --noreport --dirsfirst'
 alias chrome='google-chrome-stable'
 alias grep='grep -E --color=auto'
-alias pip=pip2 #use pip2 by default; pip3 for python3
 
 #distraction-free writing 
 alias wp='gnome-terminal --window-with-profile=writingbg & --maximize &
