@@ -28,6 +28,7 @@ fi
 
 alias ll='ls -l'
 alias la='ls -la'
+alias ldot='ls -d .??*' #list dot-files and dirs
 alias llx='ls -lX' #sort by extention
 alias llt='ls -lt' #sort by modification date
 
@@ -57,3 +58,6 @@ if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
 		alias v.ls='lsvirtualenv'
 		alias v.sp='setvirtualenvproject'
 fi
+# virtualenv
+
+alias deac='deactivate'
