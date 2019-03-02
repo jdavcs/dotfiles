@@ -66,3 +66,6 @@ if [ -f '/home/sergey/Desktop/google-cloud-sdk/completion.bash.inc' ]; then sour
 
 # because too many cows.
 export ANSIBLE_NOCOWS=1
+
+# enable shell autocompletion for kubectl
+source <(kubectl completion bash)
