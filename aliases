@@ -61,3 +61,4 @@ fi
 # virtualenv
 
 alias deac='deactivate'
+alias k=kubectl
