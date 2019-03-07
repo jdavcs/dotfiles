@@ -5,7 +5,9 @@ $include /etc/inputrc
 set editing-mode vi
 
 $if mode=vi
-#disable 'v' shortcut (normal mode) that launches an editor
-set keymap vi-command
-"v": ""
+    #disable 'v' shortcut (normal mode) that launches an editor
+    set keymap vi-command
+    "v": ""
+    set keymap vi-insert
+    "jk": vi-movement-mode
 $endif
