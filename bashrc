@@ -70,5 +70,3 @@ export ANSIBLE_NOCOWS=1
 # enable shell autocompletion for kubectl
 source <(kubectl completion bash)
 
-# remap caps lock to escape
-setxkbmap -option caps:swapescape
