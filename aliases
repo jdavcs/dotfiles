@@ -60,6 +60,9 @@ if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
 		alias v.sp='setvirtualenvproject'
 fi
 # virtualenv
-
 alias deac='deactivate'
+
+# k8s
 alias k=kubectl
+alias kd-create='~/code/bin/k8s/dashboard-create.sh'
+alias kd-delete='~/code/bin/k8s/dashboard-delete.sh'
