@@ -40,6 +40,7 @@ alias cl='c;ll' #even better!
 alias py=python3
 alias py2=python2
 alias py35=python3.5
+alias ipy=ipython
 alias t='tree --noreport --dirsfirst'
 alias chrome='google-chrome-stable'
 alias grep='grep -E --color=auto'

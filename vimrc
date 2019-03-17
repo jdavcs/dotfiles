@@ -232,6 +232,10 @@ nnoremap <silent><leader>ww :WriteToggleWritingMode<CR>
 nnoremap <silent><leader>nn :WriteToggleLineNumbers<CR>
 nnoremap <silent><leader>nf :set foldcolumn=0<CR>
 
+" visually select line
+nnoremap vv 0v$<CR>
+
+
 "let g:write_background = 'light'
 " }}}2
 
