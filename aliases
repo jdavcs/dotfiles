@@ -42,8 +42,13 @@ alias py2=python2
 alias py35=python3.5
 alias ipy=ipython
 alias t='tree --noreport --dirsfirst'
-alias chrome='google-chrome-stable'
 alias grep='grep -E --color=auto'
+
+if [ $(uname -s) == 'Darwin' ]; then
+	alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
+else
+	alias chrome='google-chrome-stable'
+fi
 
 #distraction-free writing 
 alias wp='gnome-terminal --window-with-profile=writingbg & --maximize &
