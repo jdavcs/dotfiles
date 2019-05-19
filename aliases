@@ -37,12 +37,12 @@ alias h=history
 alias c=clear
 alias cll='c;ll'
 alias cl='c;ll' #even better!
-alias py=python3
-alias py2=python2
-alias py35=python3.5
 alias ipy=ipython
 alias t='tree --noreport --dirsfirst'
 alias grep='grep -E --color=auto'
+
+# Python interpreter
+# see .bashrc-local for pyXX aliases for different versions
 
 if [ $(uname -s) == 'Darwin' ]; then
 	alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
