@@ -1,0 +1,19 @@
+[flake8]
+# These are some of the exceptions allowed (encouraged?) by Galaxy style guidelines.
+# (for convenience, used by default; can override in project dirs)
+#
+# 128 continuation line under-indented for visual indent
+# 201 and 202 are spaces after ( and before )
+# 203 whitespace before ':'
+# 402 module level import not at top of file
+# 501 is line length
+# E731 is inline assigned lambdas
+ignore = 
+    E128,
+    E201,
+    E202,
+    #E203,
+    E501,
+    E402,
+    E731
+exclude = .git,__pycache__
