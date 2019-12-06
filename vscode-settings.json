@@ -1,5 +1,5 @@
 {
-    "workbench.startupEditor": "welcomePage",
+    "workbench.startupEditor": "newUntitledFile",
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
@@ -14,7 +14,8 @@
             "after": ["$"]
         }
     ],
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "Quiet Light",
     "editor.fontSize": 13,
-    "python.linting.flake8Enabled": true
+    "python.linting.flake8Enabled": true,
+    "terminal.integrated.rendererType": "dom"
 }

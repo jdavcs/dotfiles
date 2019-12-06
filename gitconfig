@@ -16,7 +16,6 @@
 	cob = checkout -b
 	b = branch
 	c = commit
-	cia = !git add --all && git commit
 	unstage = reset HEAD --
 	last = log -1 HEAD
 	graph = log --oneline --decorate --graph --all

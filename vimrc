@@ -148,11 +148,11 @@ nnoremap <silent> <leader>s :set nolist!<CR>
 " toggle spell check
 nnoremap <leader>ss :setlocal spell!<CR>
 
-" because no self-discipline
-nnoremap <Left> :echoe "must use h"<CR>
-nnoremap <Right> :echoe "must use l"<CR>
-nnoremap <Up> :echoe "must use k"<CR>
-nnoremap <Down> :echoe "must use j"<CR>
+" because no self-discipline (update: arrows needed sometimes; jklh: non-issue)
+" nnoremap <Left> :echoe "must use h"<CR>
+" nnoremap <Right> :echoe "must use l"<CR>
+" nnoremap <Up> :echoe "must use k"<CR>
+" nnoremap <Down> :echoe "must use j"<CR>
 nnoremap <PageUp> :echoe "must use CTRL-b"<CR>
 nnoremap <PageDown> :echoe "must use CTRL-f"<CR>
 nnoremap <Home> :echoe "must use 0"<CR>
