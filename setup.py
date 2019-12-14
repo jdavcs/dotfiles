@@ -27,7 +27,7 @@ def setup():
     for name, target in LINKS.items():
         name = os.path.join(HOME, name)
         target = os.path.join(DOTFILES, target)
-        stm = 'ln -sf {} {}'.format(target, name)
+        stm = 'ln -snf {} {}'.format(target, name)
         print(stm)
         os.system(stm)
 
