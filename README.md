@@ -1,17 +1,7 @@
-# Sergey's dotfiles
+# sergey's dotfiles
 
-
-## What's inside 
-My personal dotfiles and more. Feel free to fork or use anything you like.
-Any feedback and suggestions are
-[welcome](https://github.com/sgolitsynskiy/dotfiles/issues).
-
-## Installation
-```bash
-git clone https://github.com/sgolitsynskiy/dotfiles.git
-cd dotfiles
-./install.sh
-```
+Dotfiles. Run `python setup.py` to create the links. 
+(Warning: links will overrite existing links or files)
 
 ## Credits 
 Ideas, code and inspiration came from -
@@ -20,7 +10,7 @@ Ideas, code and inspiration came from -
 * [Ryan Bates](https://github.com/ryanb/dotfiles)
 * [Cătălin Mariș](https://github.com/alrra/dotfiles)
 * [Tony Narlock](https://leanpub.com/the-tao-of-tmux/read)
-* ...and many others
+* ...and many, many others...
 
 ## License
 [MIT](https://github.com/sgolitsynskiy/dotfiles/blob/master/LICENSE)

@@ -13,7 +13,7 @@ alias sudu='sudo '
 # Add verbose to all; prompt once for rm
 alias mv='mv -v'
 # alias rm='rm -I -v'
-alias cp='cp -v'
+# alias cp='cp -v'
 
 # ls shortcuts
 # TODO improve this
@@ -41,19 +41,11 @@ alias ipy=ipython
 alias t='tree --noreport --dirsfirst'
 alias grep='grep -E --color=auto'
 
-# Python interpreter
-# see .bashrc-local for pyXX aliases for different versions
-
 if [ $(uname -s) == 'Darwin' ]; then
 	alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
 else
 	alias chrome='google-chrome-stable'
 fi
-
-#distraction-free writing 
-alias wp='gnome-terminal --window-with-profile=writingbg & --maximize &
---hide-menubar gnome-terminal --window-with-profile=writing &
---geometry=100x75 --hide-menubar & exit'
 
 # virtualenv/virtualenvwrapper:
 if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
