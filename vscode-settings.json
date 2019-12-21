@@ -14,8 +14,9 @@
             "after": ["$"]
         }
     ],
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "Solarized Dark",
     "editor.fontSize": 13,
     "python.linting.flake8Enabled": true,
-    "terminal.integrated.rendererType": "dom"
+    "terminal.integrated.rendererType": "dom",
+    "editor.renderIndentGuides": false
 }
