@@ -59,11 +59,3 @@ if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
 fi
 # virtualenv
 alias deac='deactivate'
-
-# k8s
-alias k=kubectl
-# get pod name
-alias k-pod='kubectl get pods --no-headers -o custom-columns=":metadata.name"'
-# create/delete k8s dashboard
-alias kd-create='~/code/bin/k8s/dashboard-create.sh'
-alias kd-delete='~/code/bin/k8s/dashboard-delete.sh'
