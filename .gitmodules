@@ -2,58 +2,55 @@
 	path = vim/bundle/vim-angular
 	url = git@github.com:burnettk/vim-angular.git
 	ignore = untracked
-
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
 	ignore = untracked
-
 [submodule "vim/bundle/vim-javascript"]
 	path = vim/bundle/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
 	ignore = untracked
-
 [submodule "vim/bundle/vim-racket"]
 	path = vim/bundle/vim-racket
 	url = git@github.com:wlangstroth/vim-racket.git
 	ignore = untracked
-
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
 	ignore = untracked
-    
 [submodule "vim/bundle/vim-twig"]
 	path = vim/bundle/vim-twig
 	url = git@github.com:lumiliet/vim-twig.git
 	ignore = untracked
-
 [submodule "vim/bundle/vim-pug"]
 	path = vim/bundle/vim-pug
 	url = git@github.com:digitaltoad/vim-pug.git
 	ignore = untracked
-    
 [submodule "vim/bundle/typescript-vim"]
 	path = vim/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
 	ignore = untracked
-
 [submodule "vim/bundle/vim-liquid"]
 	path = vim/bundle/vim-liquid
     url = git@github.com:tpope/vim-liquid.git
 	ignore = untracked
-
 [submodule "vim/bundle/vim-scala"]
 	path = vim/bundle/vim-scala
     url = git@github.com:derekwyatt/vim-scala.git
 	ignore = untracked
-
 [submodule "vim/bundle/Vim-Jinja2-Syntax"]
 	path = vim/bundle/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax
 	ignore = untracked
-
 [submodule "vim/bundle/vim-bundle-mako"]
 	path = vim/bundle/vim-bundle-mako
 	url = https://github.com/sophacles/vim-bundle-mako
+	ignore = untracked
+[submodule "vim/bundle/vim-vue"]
+	path = vim/bundle/vim-vue
+	url = https://github.com/posva/vim-vue
+	ignore = untracked
+[submodule "vim/bundle/vim-flake8"]
+	path = vim/bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8
 	ignore = untracked
