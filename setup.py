@@ -18,6 +18,8 @@ LINKS = {
     '.tmux.conf': 'tmux.conf',
     '.vim': 'vim',
     '.vimrc': 'vimrc',
+    '.ipython/profile_default/ipython_config.py': 'ipython/ipython_config.py',
+    '.ipython/profile_default/startup/jk.py': 'ipython/startup/jk.py',
     }
 
 HOME = os.path.expanduser('~')
