@@ -18,14 +18,6 @@
 	path = vim/bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
 	ignore = untracked
-[submodule "vim/bundle/vim-twig"]
-	path = vim/bundle/vim-twig
-	url = git@github.com:lumiliet/vim-twig.git
-	ignore = untracked
-[submodule "vim/bundle/vim-pug"]
-	path = vim/bundle/vim-pug
-	url = git@github.com:digitaltoad/vim-pug.git
-	ignore = untracked
 [submodule "vim/bundle/typescript-vim"]
 	path = vim/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
@@ -33,10 +25,6 @@
 [submodule "vim/bundle/vim-liquid"]
 	path = vim/bundle/vim-liquid
     url = git@github.com:tpope/vim-liquid.git
-	ignore = untracked
-[submodule "vim/bundle/vim-scala"]
-	path = vim/bundle/vim-scala
-    url = git@github.com:derekwyatt/vim-scala.git
 	ignore = untracked
 [submodule "vim/bundle/Vim-Jinja2-Syntax"]
 	path = vim/bundle/Vim-Jinja2-Syntax
