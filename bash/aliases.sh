@@ -40,6 +40,7 @@ alias cl='c;ll' #even better!
 alias ipy=ipython
 alias t='tree --noreport --dirsfirst'
 alias grep='grep -E --color=auto'
+alias vi=vim
 
 if [ $(uname -s) == 'Darwin' ]; then
 	alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
