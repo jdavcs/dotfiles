@@ -1,3 +1,6 @@
 # This is a reminder to set these locally
 export DEVROOT=[my repos root]
 
+alias py='python3.7'  # or whichever
+alias ipy=ipython     # should use same as 'py'
+

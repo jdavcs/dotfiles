@@ -193,6 +193,8 @@ augroup misc_settings
 
     autocmd FileType python setlocal foldmethod=indent | nnoremap <space> zA
     autocmd FileType python normal! zR
+
+
 augroup END
 " }}}1
 
@@ -216,6 +218,10 @@ if !exists(":MP")
 endif
 
 " }}}1
+
+
+
+
 
 " Plugin settings {{{1
 
@@ -253,6 +259,10 @@ augroup vim_journal
     autocmd FileType journal call journal#addterm("IDEA",        "<LocalLeader>ji", "Identifier")
     autocmd FileType journal call journal#addterm("THOUGHT",     "<LocalLeader>jh", "Constant")
     autocmd FileType journal call journal#addterm("OBSERVATION", "<LocalLeader>jo", "Underlined")
+
+    " add folding
+    autocmd FileType journal setlocal foldmethod=marker
+    autocmd FileType journal nnoremap <Space> za
 augroup END
 
 " }}}2
@@ -263,3 +273,8 @@ augroup END
 " }}}2
 
 " }}}1
+"
+"
+"
+"
+"
