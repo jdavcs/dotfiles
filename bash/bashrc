@@ -87,3 +87,8 @@ export GALAXYDEV=${DEVROOT}/galaxy/_galaxy/dev
 # preloaded venvs named by their python versions
 export GALAXYVENVS=${DEVROOT}/galaxy/_galaxy/dev-venvs
 
+# enable bash completion
+source /usr/share/bash-completion/bash_completion
+
+# enable kubectl autocompletion
+source <(kubectl completion bash)
