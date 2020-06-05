@@ -60,3 +60,6 @@ if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
 fi
 # virtualenv
 alias deac='deactivate'
+
+# misc.
+alias pgadm='nohup pgadmin4 &>/dev/null &'  # don't hog up a terminal w/pgadmin
