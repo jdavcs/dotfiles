@@ -14,6 +14,7 @@ LINKS = {
     '.inputrc': 'inputrc',
     '.irbrc': 'irbrc',
     '.myclirc': 'mycli',
+    '.pdbrc': 'pdbrc',
     '.pylintrc': 'pylintrc',
     '.tmux.conf': 'tmux.conf',
     '.vim': 'vim',
