@@ -14,7 +14,7 @@
             "after": ["$"]
         }
     ],
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Visual Studio Light",
     "editor.fontSize": 13,
     "python.linting.flake8Enabled": true,
     "terminal.integrated.rendererType": "dom",
