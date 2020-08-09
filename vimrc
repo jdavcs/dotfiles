@@ -185,11 +185,11 @@ augroup misc_settings
     autocmd FileType gitcommit setlocal textwidth=72
     autocmd FileType sh setlocal ts=4 sw=4 sts=4
     autocmd FileType html,markdown,liquid setlocal tw=100
-    autocmd FileType typescript,yaml,liquid,ruby setlocal ts=2 sw=2 sts=2 
+    autocmd FileType css,scss,html,javascript,liquid,ruby,typescript,xml,vue,yaml setlocal ts=2 sw=2 sts=2 
     " my old preferences:
     " autocmd FileType html,xml,css,scss,javascript,json,typescript,pug,yaml,markdown,liquid,ruby setlocal ts=2 sw=2 sts=2 
     " galaxy team settings:
-    autocmd FileType html,xml,css,scss,javascript,json,pug,markdown setlocal ts=4 sw=4 sts=4 
+    autocmd FileType json,pug,markdown setlocal ts=4 sw=4 sts=4 
 
     autocmd FileType python setlocal foldmethod=indent | nnoremap <space> zA
     autocmd FileType python normal! zR
