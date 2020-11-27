@@ -63,3 +63,6 @@ alias deac='deactivate'
 
 # misc.
 alias pgadm='nohup pgadmin4 &>/dev/null &'  # don't hog up a terminal w/pgadmin
+
+# be explicit about what python interpreter will run pip (use whatever is the current `python`)
+alias pip="python -m pip"
