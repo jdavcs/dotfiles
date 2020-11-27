@@ -14,9 +14,14 @@
             "after": ["$"]
         }
     ],
-    "workbench.colorTheme": "Visual Studio Light",
-    "editor.fontSize": 13,
     "python.linting.flake8Enabled": true,
     "terminal.integrated.rendererType": "dom",
-    "editor.renderIndentGuides": false
+    "editor.renderIndentGuides": false,
+    "explorer.confirmDelete": false,
+    "editor.cursorBlinking": "solid",
+    "editor.matchBrackets": "near",
+    "editor.cursorStyle": "line-thin",
+    "editor.renderLineHighlight": "gutter",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Solarized Dark"
 }

@@ -23,3 +23,6 @@ cscope.po.out
 
 # Local settings, scripts, etc.
 _local/
+
+# vs code workspace
+*.code-workspace
