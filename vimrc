@@ -162,6 +162,9 @@ nnoremap <End> :echoe "must use $"<CR>
 nnoremap <F7> mqgg=G`q
 " }}}1
 
+" maximize split
+nnoremap <C-W>m <C-W>\|<C-W>_
+
 " Autocommands {{{1
 augroup my_filetypedetect 
     autocmd!
