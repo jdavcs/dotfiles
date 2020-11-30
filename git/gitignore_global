@@ -1,6 +1,3 @@
-# Temporary files
-.netrwhist
-
 # Tag files created by etags, ctags, gtags (GNU global) and cscope
 TAGS
 .TAGS
@@ -18,6 +15,8 @@ cscope.out
 cscope.in.out
 cscope.po.out
 
+# Temporary files
+.netrwhist
 
 # Local settings, scripts, etc.
 _local/
