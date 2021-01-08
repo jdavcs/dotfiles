@@ -23,5 +23,5 @@
     "editor.cursorStyle": "line-thin",
     "editor.renderLineHighlight": "gutter",
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Solarized Dark"
+    "workbench.colorTheme": "Visual Studio Dark"
 }

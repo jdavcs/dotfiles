@@ -40,7 +40,7 @@ runtime macros/matchit.vim
 " Settings {{{1
 set nocompatible    " no need for old Vi
 set autoread        " set to auto read when file is changed from the outside
-set ignorecase      " search case-insensitive
+" set ignorecase      " search case-insensitive  (not useful in code)
 set smartcase       " do not ignore case if pattern contains uppercase letter
 set hlsearch        " highlight search matches
 set number          " line numbers

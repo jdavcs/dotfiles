@@ -12,7 +12,7 @@ PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 set -o noclobber 
 
 # Simple prompt: violet, host only
-PS1="\[\e[1;35m\]\h$ \[\e[0m\]" 
+PS1="\[\e[0;36m\]\h$ \[\e[0m\]" 
 
 # Load local .bashrc
 if [[ -f ~/.bashrc-local ]]; then
@@ -82,7 +82,7 @@ export HISTIGNORE="&:[ ]*:history:h:ls:ll:la:l:clear"
 
 # GALAXY ========================================
 # main development repo
-export GALAXYDEV=${DEVROOT}/galaxy/_galaxy/dev
+export GALAXYDEV=${DEVROOT}/galaxy/_galaxy
 
 # preloaded venvs named by their python versions
 export GALAXYVENVS=${DEVROOT}/galaxy/_galaxy/dev-venvs
