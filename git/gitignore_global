@@ -20,6 +20,7 @@ cscope.po.out
 
 # Local settings, scripts, etc.
 _local/
+uvicorn
 
 # vs code workspace
 *.code-workspace
