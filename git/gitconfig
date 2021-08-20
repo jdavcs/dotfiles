@@ -25,3 +25,5 @@
 
 [push]
 	recurseSubmodules = check
+[init]
+	defaultBranch = dev
