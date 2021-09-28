@@ -27,3 +27,8 @@
 	recurseSubmodules = check
 [init]
 	defaultBranch = dev
+
+[pager]
+    log = /usr/share/git-core/contrib/diff-highlight | less
+    show = /usr/share/git-core/contrib/diff-highlight | less
+    diff = /usr/share/git-core/contrib/diff-highlight | less
