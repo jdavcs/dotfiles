@@ -90,8 +90,8 @@ export GALAXYVENVS=${DEVROOT}/galaxy/_galaxy/dev-venvs
 # enable bash completion
 source /usr/share/bash-completion/bash_completion
 
-# enable kubectl autocompletion
-source <(kubectl completion bash)
+# enable kubectl autocompletion  TODO after reinstall
+# source <(kubectl completion bash)
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"

@@ -29,11 +29,11 @@ if &term =~ '^screen'
     execute "set <xLeft>=\e[1;*D"
 endif
 
-" let mapleader = ","      " set Leader
-" let maplocalleader = "," " set LocalLeader
+let mapleader = ","      " set Leader
+let maplocalleader = "," " set LocalLeader
 " use backslash instead: i need the comma for reverse char search
-let mapleader = "\\"      " set Leader
-let maplocalleader = "\\" " set LocalLeader
+" let mapleader = "\\"      " set Leader
+" let maplocalleader = "\\" " set LocalLeader
 
 let g:netrw_banner = 0  " do not display title banner in file explorer
 
