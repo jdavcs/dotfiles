@@ -38,7 +38,7 @@ alias c=clear
 alias cll='c;ll'
 alias cl='c;ll' #even better!
 alias ipy=ipython
-alias t='tree --noreport --dirsfirst'
+alias t="tree --noreport --dirsfirst -I 'node_modules|__pycache__'"
 alias grep='grep -E --color=auto'
 alias vi=vim
 
