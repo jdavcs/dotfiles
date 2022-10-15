@@ -16,12 +16,15 @@
     ],
     "python.linting.flake8Enabled": true,
     "terminal.integrated.rendererType": "dom",
-    "editor.renderIndentGuides": false,
     "explorer.confirmDelete": false,
     "editor.cursorBlinking": "solid",
     "editor.matchBrackets": "near",
     "editor.cursorStyle": "line-thin",
     "editor.renderLineHighlight": "gutter",
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Visual Studio Dark"
+    "workbench.colorTheme": "Visual Studio Dark",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "editor.guides.indentation": false
 }

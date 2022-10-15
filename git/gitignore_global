@@ -21,6 +21,8 @@ cscope.po.out
 # Local settings, scripts, etc.
 _local/
 uvicorn
+yarn_dev_server
+_pytest.ini
 
 # vs code workspace
 *.code-workspace
