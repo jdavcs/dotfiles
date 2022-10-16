@@ -68,4 +68,4 @@ alias pgadm='nohup pgadmin4 &>/dev/null &'  # don't hog up a terminal w/pgadmin
 alias pip="python -m pip"
 
 # initialize conda and deactivate base env
-alias condainit=". $HOME/dotfiles/bash/condainit.source ; conda deactivate"
+alias condainit=". $HOME/dotfiles/bash/condainit.sh ; conda deactivate"
