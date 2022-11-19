@@ -21,6 +21,7 @@ cscope.po.out
 # Local settings, scripts, etc.
 _local/
 uvicorn
+run_with_tests.sh
 yarn_dev_server
 _pytest.ini
 

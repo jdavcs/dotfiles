@@ -24,7 +24,7 @@
     "explorer.confirmDragAndDrop": false,
     "workbench.colorTheme": "Visual Studio Dark",
     "gitlens.hovers.currentLine.over": "line",
+    "editor.guides.indentation": false,
     "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
-    "editor.guides.indentation": false
+    "gitlens.currentLine.enabled": false
 }
