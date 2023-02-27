@@ -18,8 +18,7 @@ alias mv='mv -v'
 # ls shortcuts
 # TODO improve this
 alias l='ls -Gl'
-if [[ "$OSTYPE" == "darwin"* ]]; then
-	alias l='gls --color=always --group-directories-first'
+if [ $(uname -s) == 'Darwin' ]; then
 	alias ls='l'
 else
 	alias l='ls --color=always --group-directories-first'
@@ -28,7 +27,7 @@ fi
 
 alias ll='ls -l'
 alias la='ls -la'
-alias ldot='ls -d .??*' #list dot-files and dirs
+alias ldot='ls -dl .??*' #list dot-files and dirs
 alias llx='ls -lX' #sort by extention
 alias llt='ls -lt' #sort by modification date
 
@@ -40,7 +39,7 @@ alias cl='c;ll' #even better!
 alias ipy=ipython
 alias t="tree --noreport --dirsfirst -I 'node_modules|__pycache__'"
 alias grep='grep -E --color=auto'
-alias vi=vim
+alias grepp="grep --include=*py"  # *py only
 
 if [ $(uname -s) == 'Darwin' ]; then
 	alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
@@ -48,16 +47,6 @@ else
 	alias chrome='google-chrome-stable'
 fi
 
-# virtualenv/virtualenvwrapper:
-if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
-		alias v='workon'
-		alias v.d='deactivate'
-		alias v.mk='mkvirtualenv'
-		alias v.rm='rmvirtualenv'
-		alias v.cd='cdvirtualenv'
-		alias v.ls='lsvirtualenv'
-		alias v.sp='setvirtualenvproject'
-fi
 # virtualenv
 alias deac='deactivate'
 
