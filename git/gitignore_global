@@ -20,10 +20,15 @@ cscope.po.out
 
 # Local settings, scripts, etc.
 _local/
-uvicorn
+run_uvicorn
+run_ts_uvicorn
 run_with_tests.sh
 yarn_dev_server
 _pytest.ini
+_lotw.py
 
 # vs code workspace
 *.code-workspace
+
+# my env files
+.env

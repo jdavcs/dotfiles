@@ -22,9 +22,9 @@
     "editor.cursorStyle": "line-thin",
     "editor.renderLineHighlight": "gutter",
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Visual Studio Dark",
     "gitlens.hovers.currentLine.over": "line",
     "editor.guides.indentation": false,
     "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false
+    "workbench.colorTheme": "Visual Studio Light",
+    "terminal.integrated.scrollback": 200000
 }

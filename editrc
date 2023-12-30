@@ -1,4 +1,4 @@
 bind -v
-bind \\t rl_complete
+bind "\t" rl_complete
 bind "jk" vi-command-mode
-# bind
+bind

@@ -22,8 +22,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	alias l='gls --color=always --group-directories-first'
 	alias ls='l'
 else
-	alias l='ls --color=always --group-directories-first'
-	alias ls='ls --color=always --group-directories-first'
+	alias l='ls --color=auto --group-directories-first'
+	alias ls='ls --color=auto --group-directories-first'
 fi
 
 alias ll='ls -l'
