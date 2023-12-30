@@ -1,5 +1,3 @@
-# sergey's dotfiles
-
 Dotfiles. Run `python setup.py` to create the links. 
 (Warning: links will overrite existing links or files)
 

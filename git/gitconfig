@@ -30,6 +30,6 @@
 	defaultBranch = dev
 
 [pager]
-    log = /usr/share/git-core/contrib/diff-highlight | less
-    show = /usr/share/git-core/contrib/diff-highlight | less
-    diff = /usr/share/git-core/contrib/diff-highlight | less
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
