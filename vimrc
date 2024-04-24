@@ -1,5 +1,5 @@
 " .vimrc
-" Author  : Sergey Golitsynskiy <sgolitsynskiy@gmail.com>
+" Author  : John Davis <jdavcs@gmail.com>
 " License : MIT
 
 execute pathogen#infect()
@@ -57,7 +57,7 @@ set nowrap          " do not wrap lines
 set scrolloff=3     " more context around cursor
 set formatlistpat+=\\\|^\\*\\s*   " prevent reformatting of * bullets
  
-" set expandtab       " use spaces instead of tabs in I mode
+set expandtab       " use spaces instead of tabs in I mode
 set tabstop=4       " spaces in a tab
 set shiftwidth=4    " spaces in a tab when autoindenting
 set softtabstop=4   " spaces in a tab in I mode

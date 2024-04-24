@@ -32,3 +32,6 @@ _lotw.py
 
 # my env files
 .env
+
+# python venvs
+.venv

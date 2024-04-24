@@ -100,3 +100,6 @@ complete -o default -F _pip_completion /home/sergey/0dev/galaxy/_galaxy/dev/.ven
 
 # conda
 export PATH="$HOME/miniconda3/condabin:$PATH"
+
+
+export PATH="$HOME/bin:$PATH"
