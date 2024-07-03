@@ -1,30 +1,28 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "k"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {   "before": ["H"],
-            "after": ["^"]
-        },
-        {   "before": ["L"],
-            "after": ["$"]
-        }
-    ],
-    "python.linting.flake8Enabled": true,
-    "terminal.integrated.rendererType": "dom",
-    "explorer.confirmDelete": false,
-    "editor.cursorBlinking": "solid",
-    "editor.matchBrackets": "near",
-    "editor.cursorStyle": "line-thin",
-    "editor.renderLineHighlight": "gutter",
-    "explorer.confirmDragAndDrop": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "editor.guides.indentation": false,
-    "gitlens.codeLens.enabled": false,
-    "workbench.colorTheme": "Visual Studio Light",
-    "terminal.integrated.scrollback": 200000
+  "workbench.startupEditor": "newUntitledFile",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["H"], "after": ["^"] },
+    { "before": ["L"], "after": ["$"] }
+  ],
+  "python.linting.flake8Enabled": true,
+  "terminal.integrated.rendererType": "dom",
+  "explorer.confirmDelete": false,
+  "editor.cursorBlinking": "solid",
+  "editor.matchBrackets": "near",
+  "editor.cursorStyle": "line-thin",
+  "editor.renderLineHighlight": "gutter",
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "editor.guides.indentation": false,
+  "gitlens.codeLens.enabled": false,
+  "workbench.colorTheme": "Default Light+",
+  "terminal.integrated.scrollback": 200000,
+  "editor.accessibilitySupport": "off",
+  "eslint.enable": false
 }

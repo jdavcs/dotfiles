@@ -11,8 +11,12 @@ PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 # Don't overwirte existing files by redirection
 set -o noclobber 
 
-# Simple prompt: violet, host only
-PS1="\[\e[0;36m\]\h$ \[\e[0m\]" 
+# Simple prompt: host only
+# PS1="\[\e[0;36m\]\h$ \[\e[0m\]" 
+
+# display git branch
+PS1='\[\e[0;36m\]@\h $(__git_ps1 "(%s)")\$ \[\e[0m\]'
+
 
 # Load local .bashrc
 if [[ -f ~/.bashrc-local ]]; then
@@ -103,3 +107,7 @@ export PATH="$HOME/miniconda3/condabin:$PATH"
 
 
 export PATH="$HOME/bin:$PATH"
+
+
+# display git branch?
+source ~/git-prompt.sh
