@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Don't overwirte existing files by redirection
+set -o noclobber 
+
+# Load solarized colors for ls
+eval $(gdircolors -b ~/.dircolors)
+
+export LC_COLLATE='POSIX'  # sort order: ABab (vs. aAbB)
+
+export EDITOR='vim'  # default editor
+
+# Make Python use UTF-8 encoding for output to stdin, stdout, and stderr
+export PYTHONIOENCODING='UTF-8'
+
+export IGNOREEOF=1  # Ignore <C-d> once; next time close terminal
+
+export ANSIBLE_NOCOWS=1  # because too many cows.
+
+# Lines/commands stored:
+export HISTSIZE=99999  # in history list: in memory during session
+export HISTFILESIZE="${HISTSIZE}" # in history file: on disk
+
+# Do not store these commands
+export HISTIGNORE="&:[ ]*:history:h:ls:ll:la:l:clear"

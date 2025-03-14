@@ -2,27 +2,16 @@ import os
 
 
 LINKS = {
-    '.angular-config.json': 'angular-config.json',
-    '.bashrc': 'bash/bashrc',
-    '.condarc': 'condarc',
-    '.config/Code/User/settings.json': 'vscode-settings.json',
-    '.config/pgcli/config': 'pgcli-config',
+    '.bashrc.d': 'bashrc.d',
+    '.ipython/profile_default/startup/jk.py': 'ipython/startup/jk.py',
+    '.vim': 'vim',
     '.dircolors': 'dircolors',
     '.editrc': 'editrc',
-    '.flake8': 'flake8',
-    '.gitconfig': 'git/gitconfig',
-    '.gitignmore_global': 'git/gitignore_global',
+    '.gitconfig': 'gitconfig',
     '.inputrc': 'inputrc',
-    '.ipython/profile_default/ipython_config.py': 'ipython/ipython_config.py',
-    '.ipython/profile_default/startup/jk.py': 'ipython/startup/jk.py',
-    '.irbrc': 'irbrc',
-    '.myclirc': 'mycli',
-    '.pdbrc': 'pdbrc',
-    '.pylintrc': 'pylintrc',
     '.tmux.conf': 'tmux.conf',
-    '.vim': 'vim',
     '.vimrc': 'vimrc',
-    }
+}
 
 HOME = os.path.expanduser('~')
 DOTFILES = os.path.join(HOME, 'dotfiles')
