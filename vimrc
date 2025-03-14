@@ -189,10 +189,10 @@ augroup misc_settings
     autocmd!
     autocmd FileType vim setlocal foldmethod=marker
     autocmd FileType gitcommit setlocal textwidth=72
-    autocmd FileType sh setlocal ts=4 sw=4 sts=4
+    autocmd FileType sh setlocal ts=4 sw=4 sts=4 expandtab!
     autocmd FileType html,markdown,liquid setlocal tw=100
     autocmd FileType yaml setlocal ts=2 sw=2 sts=2 
-    autocmd FileType css,scss,html,javascript,liquid,ruby,typescript,vue setlocal ts=4 sw=4 sts=4 
+    autocmd FileType css,scss,html,javascript,liquid,ruby,typescript,vue setlocal ts=2 sw=2 sts=2 
     " autocmd FileType css,scss,html,javascript,liquid,ruby,typescript,vue,yaml setlocal ts=2 sw=2 sts=2 
     " my old preferences:
     " autocmd FileType html,xml,css,scss,javascript,json,typescript,pug,yaml,markdown,liquid,ruby setlocal ts=2 sw=2 sts=2 
