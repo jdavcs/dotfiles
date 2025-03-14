@@ -21,6 +21,7 @@
 	graph = log --oneline --decorate --graph --all
     bdate = !git for-each-ref --sort='-committerdate:iso8601' --format='%(committerdate:relative)|%(refname:short)|%(committername)' refs/heads/ | column -s '|' -t
     l = log --oneline
+    show-s = show  --name-status  --pretty="%s"
 
 [diff]
 	submodule = log
@@ -34,3 +35,11 @@
     log = diff-highlight | less
     show = diff-highlight | less
     diff = diff-highlight | less
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[diff "ansible-vault"]
+	textconv = ansible-vault view

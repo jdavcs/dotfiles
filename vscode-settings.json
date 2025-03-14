@@ -21,7 +21,7 @@
   "gitlens.hovers.currentLine.over": "line",
   "editor.guides.indentation": false,
   "gitlens.codeLens.enabled": false,
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Visual Studio Dark",
   "terminal.integrated.scrollback": 200000,
   "editor.accessibilitySupport": "off",
   "eslint.enable": false

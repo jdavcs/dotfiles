@@ -26,6 +26,7 @@ run_with_tests.sh
 yarn_dev_server
 _pytest.ini
 _lotw.py
+_lotw/
 
 # vs code workspace
 *.code-workspace
