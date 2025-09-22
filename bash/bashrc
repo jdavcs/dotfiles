@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+stty -echoctl
+
 # Load shell dotfiles
 DOTFILES=dotfiles
 source ~/${DOTFILES}/bash/aliases.sh
@@ -12,10 +16,10 @@ PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 set -o noclobber 
 
 # Simple prompt: host only
-# PS1="\[\e[0;36m\]\h$ \[\e[0m\]" 
+PS1='\[\e[0;36m\]\u@\h\$ \[\e[0m\]' 
 
 # display git branch
-PS1='\[\e[0;36m\]@\h$(__git_ps1 "(%s)")\$ \[\e[0m\]'
+##PS1='\[\e[0;36m\]@\h$(__git_ps1 "(%s)")\$ \[\e[0m\]'
 
 
 # Load local .bashrc
@@ -31,13 +35,6 @@ if [[ "$OSTYPE" != "darwin"* ]]; then
 	eval $(dircolors ~/.dircolors)
 else
 	eval $(gdircolors -b ~/.dircolors)
-fi
-
-# virtualenv/virtualenvwrapper:
-if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]; then
-		export WORKON_HOME="${HOME}/.virtualenvs"
-		export PROJECT_HOME="${HOME}/0dev/pythonvw_projects"
-		source /usr/local/bin/virtualenvwrapper.sh
 fi
 
 export NVM_DIR="$HOME/.nvm"
@@ -83,7 +80,7 @@ export GALAXYDEV=${DEVROOT}/galaxy/_galaxy
 export GALAXYVENVS=${DEVROOT}/galaxy/_galaxy/dev-venvs
 
 # enable bash completion
-source /usr/share/bash-completion/bash_completion
+# source /usr/share/bash-completion/bash_completion
 
 # enable kubectl autocompletion  TODO after reinstall
 # source <(kubectl completion bash)
@@ -110,4 +107,4 @@ export PATH="$HOME/bin:$PATH"
 
 
 # display git branch?
-source ~/git-prompt.sh
+# source ~/git-prompt.sh

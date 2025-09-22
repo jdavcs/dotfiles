@@ -11,7 +11,7 @@ endif
 filetype plugin on
 filetype indent on
 
-colorscheme solarized
+"  colorscheme solarized
 
 " tmux sets bg=light
 if $TERM == 'screen-256color'

@@ -19,7 +19,7 @@ alias mv='mv -v'
 # TODO improve this
 alias l='ls -Gl'
 if [ $(uname -s) == 'Darwin' ]; then
-	alias ls='l'
+	alias ls='gls --color=auto --group-directories-first'
 else
 	alias l='ls --color=auto --group-directories-first'
 	alias ls='ls --color=auto --group-directories-first'
@@ -58,3 +58,6 @@ alias pip="python -m pip"
 
 # initialize conda and deactivate base env
 alias initconda=". $HOME/dotfiles/bash/condainit.sh ; conda deactivate"
+
+alias python=python3
+
