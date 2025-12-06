@@ -52,6 +52,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export LC_COLLATE='POSIX'  # sort order: ABab (vs. aAbB)
 
 export EDITOR='vim'  # default editor
+export SYSTEMD_EDITOR='/usr/bin/vim'  # for systemctl edit
 
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr
 export PYTHONIOENCODING='UTF-8'
@@ -65,7 +66,7 @@ export ANSIBLE_NOCOWS=1  # because too many cows.
 export HISTTIMEFORMAT='%h %d %H:%M  '
 
 # Lines/commands stored:
-export HISTSIZE=99999  # in history list: in memory during session
+export HISTSIZE=-1  # in history list: in memory during session
 export HISTFILESIZE="${HISTSIZE}" # in history file: on disk
 
 # Do not store duplicates and commands that begin with a space
@@ -75,12 +76,6 @@ export HISTCONTROL='ignoreboth'
 export HISTIGNORE="&:[ ]*:history:h:ls:ll:la:l:clear"
 
 
-# GALAXY ========================================
-# main development repo
-export GALAXYDEV=${DEVROOT}/galaxy/_galaxy
-
-# preloaded venvs named by their python versions
-export GALAXYVENVS=${DEVROOT}/galaxy/_galaxy/dev-venvs
 
 # enable bash completion
 source /usr/share/bash-completion/bash_completion
