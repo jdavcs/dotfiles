@@ -24,5 +24,6 @@
   "workbench.colorTheme": "Visual Studio Dark",
   "terminal.integrated.scrollback": 200000,
   "editor.accessibilitySupport": "off",
-  "eslint.enable": false
+  "eslint.enable": false,
+  "redhat.telemetry.enabled": false
 }
