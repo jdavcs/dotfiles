@@ -4,6 +4,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias -- -='cd -'  # escape dash with --
 
 alias mv='mv -v'  # Add verbose
 
