@@ -1,22 +1,13 @@
 #!/usr/bin/env bash
 
-# Easier navigation: .., ..., ...., ....., ~ and -
+# Up navigation
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias -- -='cd -'  # escape dash with --
 
-# Enable aliases to be sudo’ed
-alias sudu='sudo '
-
-# Add verbose to all; prompt once for rm
-alias mv='mv -v'
-# alias rm='rm -I -v'
-# alias cp='cp -v'
+alias mv='mv -v'  # Add verbose
 
 # ls shortcuts
-# TODO improve this
 alias l='ls -Gl'
 if [ $(uname -s) == 'Darwin' ]; then
 	alias ls='l'
@@ -34,12 +25,12 @@ alias llt='ls -lt' #sort by modification date
 # Misc shortcuts
 alias h=history
 alias c=clear
-alias cll='c;ll'
-alias cl='c;ll' #even better!
-alias ipy=ipython
+alias cl='c;ll'
 alias t="tree --noreport --dirsfirst -I 'node_modules|__pycache__'"
 alias grep='grep -E --color=auto'
 alias grepp="grep --include=*py"  # *py only
+alias python=python3
+alias dir='dir --color=auto'
 
 if [ $(uname -s) == 'Darwin' ]; then
 	alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
