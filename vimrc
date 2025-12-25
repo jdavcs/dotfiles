@@ -4,13 +4,9 @@
 
 execute pathogen#infect()
 
-if !exists("g:syntax_on")
-    syntax enable
-endif
-
+syntax on
 filetype plugin on
 filetype indent on
-
 colorscheme solarized
 
 " tmux sets bg=light
@@ -18,32 +14,15 @@ if $TERM == 'screen-256color'
     set background=dark 
 endif
 
-
-
-" tmux setting to enable Vim CTRL-arrow key sequences under Tmux
-if &term =~ '^screen'
-    " tmux will send xterm-style keys when xterm-keys is on
-    execute "set <xUp>=\e[1;*A"
-    execute "set <xDown>=\e[1;*B"
-    execute "set <xRight>=\e[1;*C"
-    execute "set <xLeft>=\e[1;*D"
-endif
-
-let mapleader = ","      " set Leader
-let maplocalleader = "," " set LocalLeader
-" use backslash instead: i need the comma for reverse char search
-" let mapleader = "\\"      " set Leader
-" let maplocalleader = "\\" " set LocalLeader
+" Use backslash (not comma): I need the comma for reverse char search
+let mapleader = "\\"      " set Leader
+let maplocalleader = "\\" " set LocalLeader
 
 let g:netrw_banner = 0  " do not display title banner in file explorer
-
-" use % to switch between opening and closing tags, brackets, etc.
-runtime macros/matchit.vim
 
 " Settings {{{1
 set nocompatible    " no need for old Vi
 set autoread        " set to auto read when file is changed from the outside
-" set ignorecase      " search case-insensitive  (not useful in code)
 set smartcase       " do not ignore case if pattern contains uppercase letter
 set hlsearch        " highlight search matches
 set number          " line numbers
@@ -78,19 +57,6 @@ set winminwidth=0
 set winminheight=0
 
 set ruler "status line
-
-" Set permanent cursor color
-" if &term =~ "xterm\\|rxvt"
-    " use an orange cursor in insert mode
-"    let &t_SI = "\<Esc>]12;orange\x7"
-    " use a red cursor otherwise
-"    let &t_EI = "\<Esc>]12;red\x7"
-"    silent !echo -ne "\033]12;red\007"
-    " reset cursor when vim exits
-"    autocmd VimLeave * silent !echo -ne "\033]112\007"
-    " use \003]12;gray\007 for gnome-terminal
-" endif
-" }}}
 
 " Mappings {{{1
 " switch to N mode
@@ -136,11 +102,7 @@ else
     nnoremap <silent> <C-Up>    :res +1<CR>
     nnoremap <silent> <C-Down>  :res -1<CR>
 endif
-
     
-" add semicolumn at end of line without moving cursor
-nnoremap <Leader>; mqA;<esc>`q
-
 " faster scrolling up/down (2 lines instead of 1)
 nnoremap <C-e> 2<C-e>
 nnoremap <C-y> 2<C-y>
@@ -150,16 +112,6 @@ nnoremap <silent> <leader>s :set nolist!<CR>
 
 " toggle spell check
 nnoremap <leader>ss :setlocal spell!<CR>
-
-" because no self-discipline (update: arrows needed sometimes; jklh: non-issue)
-" nnoremap <Left> :echoe "must use h"<CR>
-" nnoremap <Right> :echoe "must use l"<CR>
-" nnoremap <Up> :echoe "must use k"<CR>
-" nnoremap <Down> :echoe "must use j"<CR>
-nnoremap <PageUp> :echoe "must use CTRL-b"<CR>
-nnoremap <PageDown> :echoe "must use CTRL-f"<CR>
-nnoremap <Home> :echoe "must use 0"<CR>
-nnoremap <End> :echoe "must use $"<CR>
 
 "reindent file, then go back to where you were
 nnoremap <F7> mqgg=G`q
@@ -196,16 +148,9 @@ augroup misc_settings
     autocmd FileType html,markdown,liquid setlocal tw=100
     autocmd FileType yaml setlocal ts=2 sw=2 sts=2
     autocmd FileType css,scss,html,javascript,liquid,ruby,typescript,vue setlocal ts=4 sw=4 sts=4
-    " autocmd FileType css,scss,html,javascript,liquid,ruby,typescript,vue,yaml setlocal ts=2 sw=2 sts=2
-    " my old preferences:
-    " autocmd FileType html,xml,css,scss,javascript,json,typescript,pug,yaml,markdown,liquid,ruby setlocal ts=2 sw=2 sts=2 
-    " galaxy team settings:
-    autocmd FileType json,pug,markdown setlocal ts=4 sw=4 sts=4 
-
+    autocmd FileType json,pug,markdown setlocal ts=4 sw=4 sts=4  " galaxy team settings:
     autocmd FileType python setlocal foldmethod=indent | nnoremap <space> zA
     autocmd FileType python normal! zR
-
-
 augroup END
 " }}}1
 
@@ -227,11 +172,7 @@ endif
 if !exists(":MP")
     command MP hi MatchParen ctermbg=10 ctermfg=LightBlue
 endif
-
 " }}}1
-
-
-
 
 
 " Plugin settings {{{1
@@ -251,9 +192,6 @@ nnoremap <silent><leader>nf :set foldcolumn=0<CR>
 
 " visually select line
 nnoremap vv 0v$<CR>
-
-
-"let g:write_background = 'light'
 " }}}2
 
 " vim-journal {{{2
@@ -278,14 +216,7 @@ augroup END
 
 " }}}2
 
-" vim-syntastic {{{2
-" only show error messages, supress the rest
-" let g:syntastic_quiet_messages = { "!level": "errors" }
-" }}}2
-
 " }}}1
-"
-"
 "
 "
 set ignorecase smartcase
