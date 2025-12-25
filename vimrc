@@ -58,6 +58,8 @@ set winminheight=0
 
 set ruler "status line
 
+set textwidth=110
+
 " Mappings {{{1
 " switch to N mode
 inoremap jk <Esc>
@@ -145,7 +147,7 @@ augroup misc_settings
     autocmd FileType vim setlocal foldmethod=marker
     autocmd FileType gitcommit setlocal textwidth=72
     autocmd FileType sh setlocal ts=4 sw=4 sts=4 expandtab!
-    autocmd FileType html,markdown,liquid setlocal tw=100
+    autocmd FileType html,markdown,liquid setlocal
     autocmd FileType yaml setlocal ts=2 sw=2 sts=2
     autocmd FileType css,scss,html,javascript,liquid,ruby,typescript,vue setlocal ts=4 sw=4 sts=4
     autocmd FileType json,pug,markdown setlocal ts=4 sw=4 sts=4  " galaxy team settings:
