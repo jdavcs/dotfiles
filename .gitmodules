@@ -1,6 +1,8 @@
 [submodule "vim/bundle/vim-write"]
 	path = vim/bundle/vim-write
 	url = git@github.com:jdavcs/vim-write.git
+    ignore = all
 [submodule "vim/bundle/vim-journal"]
 	path = vim/bundle/vim-journal
 	url = git@github.com:jdavcs/vim-journal.git
+    ignore = all
