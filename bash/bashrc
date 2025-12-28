@@ -56,17 +56,9 @@ export HISTCONTROL='ignoreboth'  # Do not store duplicates and commands that beg
 export HISTIGNORE="&:[ ]*:history:h:ls:ll:la:l:clear"  # Do not store these commands
 shopt -s histappend  # append to the history file, don't overwrite it
 
-export PATH="$HOME/miniconda3/condabin:$PATH"
 
 export ANSIBLE_NOCOWS=1  # because too many cows.
 
-# pyenv (do not use init - just use it to organize py versions)
-export PYENV_ROOT=$HOME/.pyenv
-export PATH="$PYENV_ROOT/bin:$PATH"
-
-# Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
 
 # Set terminal title to $PWD
 PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
@@ -97,3 +89,18 @@ PS1='${debian_chroot:+($debian_chroot)}\[\e[0;36m\]\u@\h$(__git_ps1 "(%s)")\$ \[
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[0;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 . "$HOME/.local/bin/env"  # Added by uv installer
+
+# Ensure PATH is not extended w/duplicates on subsequent sourcing of .bashrc
+if [ -z "$PATH_IS_SET" ]; then
+	export PATH_IS_SET=1
+
+	export PATH="$HOME/miniconda3/condabin:$PATH"
+
+	# pyenv (do not use init - just use it to organize py versions)
+	export PYENV_ROOT=$HOME/.pyenv
+	export PATH="$PYENV_ROOT/bin:$PATH"
+
+	# Install Ruby Gems to ~/gems
+	export GEM_HOME="$HOME/gems"
+	export PATH="$HOME/gems/bin:$PATH"
+fi
