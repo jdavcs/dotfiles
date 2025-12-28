@@ -2,7 +2,7 @@ import os
 
 
 LINKS = {
-    '.bash_profile': 'bash/bashrc',
+    '.bash_profile': 'bash/bash_profile',
     '.bashrc': 'bash/bashrc',
     '.condarc': 'condarc',
     '.dircolors': 'dircolors',
