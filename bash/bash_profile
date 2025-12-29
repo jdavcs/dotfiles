@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-[[ -f ~/.bashrc ]] && . ~/.bashrc
-
-eval "$(keychain --eval --agents ssh id_ed25519)"
