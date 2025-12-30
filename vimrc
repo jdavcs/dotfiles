@@ -15,8 +15,8 @@ if $TERM == 'screen-256color'
 endif
 
 " Use backslash (not comma): I need the comma for reverse char search
-let mapleader = "\\"      " set Leader
-let maplocalleader = "\\" " set LocalLeader
+let mapleader = " "      " set Leader
+let maplocalleader = " " " set LocalLeader
 
 let g:netrw_banner = 0  " do not display title banner in file explorer
 
