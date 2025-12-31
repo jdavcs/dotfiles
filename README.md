@@ -1,4 +1,4 @@
-Dotfiles. Run `python setup.py` to create the links. 
+Min dotfiles for remote servers. Run `python setup.py` to create the links. 
 (Warning: links will overrite existing links or files)
 
 ## License

@@ -59,6 +59,7 @@ set winminheight=0
 set ruler "status line
 
 set textwidth=110
+set ignorecase smartcase
 
 " Mappings {{{1
 " switch to N mode
@@ -155,70 +156,3 @@ augroup misc_settings
     autocmd FileType python normal! zR
 augroup END
 " }}}1
-
-" My commands {{{1
-if !exists(":JJ")
-    command JJ call s:ToggleWritingMode()
-endif
-
-if !exists(":NN")
-    command NN call s:ToggleLineNumbersAndMargin()
-endif
-
-" one extra N to remove left margin
-if !exists(":NNN")
-    command NNN set foldcolumn=0
-endif
-
-" make MatchParen use more subtle colors (can't make it auto-load with vimrc)
-if !exists(":MP")
-    command MP hi MatchParen ctermbg=10 ctermfg=LightBlue
-endif
-" }}}1
-
-
-" Plugin settings {{{1
-
-" don't need double indent after open paren in python
-let g:pyindent_open_paren = '&sw'
-
-" vim-timestamp {{{2
-nnoremap <silent><localleader>ti :TimestampInsert<CR>
-nnoremap <silent><localleader>tu :TimestampUpdate<CR>
-" }}}2
-
-" vim-write {{{2
-nnoremap <silent><leader>ww :WriteToggleWritingMode<CR>
-nnoremap <silent><leader>nn :WriteToggleLineNumbers<CR>
-nnoremap <silent><leader>nf :set foldcolumn=0<CR>
-
-" visually select line
-nnoremap vv 0v$<CR>
-" }}}2
-
-" vim-journal {{{2
-
-augroup vim_journal
-    autocmd!
-    " setup mappings
-    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jd :JournalInsertDate<CR>zzi
-    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jt :JournalInsertTodo<CR>zza
-    autocmd FileType journal nnoremap <buffer> <silent> <LocalLeader>jsm :JournalMakeSummaries<CR>
-
-    " add your custom terms; this MUST be inside a filetype autocmd:
-    " if called for any file, the vim-journal filetype plugin won't be loaded.
-    autocmd FileType journal call journal#addterm("IDEA",        "<LocalLeader>ji", "Identifier")
-    autocmd FileType journal call journal#addterm("THOUGHT",     "<LocalLeader>jh", "Constant")
-    autocmd FileType journal call journal#addterm("OBSERVATION", "<LocalLeader>jo", "Underlined")
-
-    " add folding
-    autocmd FileType journal setlocal foldmethod=marker
-    autocmd FileType journal nnoremap <Space> za
-augroup END
-
-" }}}2
-
-" }}}1
-"
-"
-set ignorecase smartcase

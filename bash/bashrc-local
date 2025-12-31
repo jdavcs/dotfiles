@@ -1,0 +1,30 @@
+# .bashrc-local
+
+# Don't overwirte existing files by redirection
+set -o noclobber 
+
+export LC_COLLATE='POSIX'  # sort order: ABab (vs. aAbB)
+
+export EDITOR='vim'  # default editor
+export SYSTEMD_EDITOR='/usr/bin/vim'  # for systemctl edit
+
+# Make Python use UTF-8 encoding for output to stdin, stdout, and stderr
+export PYTHONIOENCODING='UTF-8'
+
+export IGNOREEOF=1  # Ignore <C-d> once; next time close terminal
+
+export HISTTIMEFORMAT='%h %d %H:%M  '
+export HISTSIZE=-1  # Lines/commands stored in history list: in memory during session
+export HISTFILESIZE="${HISTSIZE}"  # Lines/commands stored in history file: on disk
+export HISTCONTROL='ignoreboth'  # Do not store duplicates and commands that begin with a space
+export HISTIGNORE="&:[ ]*:history:h:ls:ll:la:l:clear"  # Do not store these commands
+shopt -s histappend  # append to the history file, don't overwrite it
+
+export ANSIBLE_NOCOWS=1  # because too many cows.
+
+color_prompt=yes
+
+# Load shell dotfiles
+DOTFILES=dotfiles
+source ~/${DOTFILES}/bash/aliases.sh
+source ~/${DOTFILES}/bash/functions.sh

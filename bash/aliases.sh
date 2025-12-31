@@ -33,20 +33,8 @@ alias grepp="grep --include=*py"  # *py only
 alias python=python3
 alias dir='dir --color=auto'
 
-if [ $(uname -s) == 'Darwin' ]; then
-	alias chrome='/usr/bin/open -a "/Applications/Google Chrome.app"'
-else
-	alias chrome='google-chrome-stable'
-fi
-
 # virtualenv
 alias deac='deactivate'
 
-# misc.
-alias pgadm='nohup pgadmin4 &>/dev/null &'  # don't hog up a terminal w/pgadmin
-
 # be explicit about what python interpreter will run pip (use whatever is the current `python`)
 alias pip="python -m pip"
-
-# initialize conda and deactivate base env
-alias initconda=". $HOME/dotfiles/bash/condainit.sh ; conda deactivate"
