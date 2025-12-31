@@ -6,3 +6,7 @@
 	path = vim/bundle/vim-journal
 	url = git@github.com:jdavcs/vim-journal.git
     ignore = all
+[submodule "vim/bundle/vim-timestamp"]
+	path = vim/bundle/vim-timestamp
+	url = git@github.com:jdavcs/vim-timestamp.git
+    ignore = all
