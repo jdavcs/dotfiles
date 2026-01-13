@@ -158,6 +158,8 @@ fi
 # be explicit about what python interpreter will run pip (use whatever is the current `python`)
 alias pip="python -m pip"
 
+alias python=python3
+
 
 # PRIVATE SETTINGS ----------
 # Apply private settings if file exists
