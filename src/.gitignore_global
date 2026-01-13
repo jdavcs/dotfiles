@@ -1,0 +1,38 @@
+# Tag files created by etags, ctags, gtags (GNU global) and cscope
+TAGS
+.TAGS
+!TAGS/
+tags
+.tags
+!tags/
+gtags.files
+GTAGS
+GRTAGS
+GPATH
+GSYMS
+cscope.files
+cscope.out
+cscope.in.out
+cscope.po.out
+
+# Temporary files
+.netrwhist
+
+# Local settings, scripts, etc.
+_local/
+run_uvicorn
+run_ts_uvicorn
+run_with_tests.sh
+yarn_dev_server
+_pytest.ini
+_lotw.py
+_lotw/
+
+# vs code workspace
+*.code-workspace
+
+# my env files
+.env
+
+# python venvs
+.venv
