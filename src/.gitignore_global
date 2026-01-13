@@ -17,6 +17,7 @@ cscope.po.out
 
 # Temporary files
 .netrwhist
+.vim/.netrwhist
 
 # Local settings, scripts, etc.
 _local/
