@@ -11,9 +11,9 @@ bashrc_src="${dotfiles_src}/.bashrc"
 main() {
 	# Loop over all dotfiles
 	shopt -s dotglob
-	for f in $dotfiles_src/*; do
-        if [[ ! $(basename $f) =~ ^(nested|.bashrc|.profile|.bash_profile)$ ]]; then
-			process_dotfile $f
+	for f in "$dotfiles_src"/*; do
+        if [[ ! $(basename "$f") =~ ^(nested|.bashrc|.profile|.bash_profile)$ ]]; then
+			process_dotfile "$f"
 		fi
 	done
 	shopt -u dotglob
@@ -78,7 +78,8 @@ append_source_local_to_bashrc() {
 	# Append sourcing .bachrc.local to an existing $HOME/.bashrc
 	# (Escape $HOME so it's appended verbatim)
     local codeblock
-	if ! grep -q '. "$HOME/.bashrc.local"' $bashrc; then
+	# shellcheck disable=SC2016
+	if ! grep -q '. "$HOME/.bashrc.local"' "$bashrc"; then
 		read -r -d '' codeblock <<- EOF
 	
 		# Source local settings if symlink to .bashrc.local exists
@@ -107,12 +108,16 @@ append_tmux_handling_to_profile() {
 }
 
 process_dotfile() {
-	local path="$HOME/$(basename $1)"
+	local path
+	# shellcheck disable=SC2086
+	path="$HOME/$(basename $1)"
 	if [[ -f "$path" && ! -L "$path" ]]; then  # $path is a file and not a symlink
 		# Do not override existing file: command will fail
+		# shellcheck disable=SC2086
 		ln -snv "$1" "$HOME/$(basename $1)"
 	else
 		# Create symlink; may override existing symlink
+		# shellcheck disable=SC2086
 		ln -sfnv "$1" "$HOME/$(basename $1)"
 	fi
 }

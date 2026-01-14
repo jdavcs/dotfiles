@@ -30,7 +30,7 @@ fi
 # Enable color support for Mac
 if [[ $(uname -s) == 'Darwin' ]]; then
 	if command -v tree &> /dev/null; then
-		eval $(gdircolors -b ~/.dircolors)
+		eval "$(gdircolors -b ~/.dircolors)"
 	fi
 fi
 
@@ -68,7 +68,7 @@ PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'  # set terminal title to $PWD
 PS1='${debian_chroot:+($debian_chroot)}\[\e[0;36m\]\u@\h$ \[\e[0m\]'
 
 # Display git branch in prompt
-source ~/.git-prompt.sh
+. ~/.git-prompt.sh
 PS1='${debian_chroot:+($debian_chroot)}\[\e[0;36m\]\u@\h$(__git_ps1 "(%s)")\$ \[\e[0m\]'
 
 # Load git completions
@@ -152,7 +152,7 @@ fi
 
 # initialize conda and deactivate base env
 if command -v conda &> /dev/null; then
-    alias initconda=". $HOME/.condainit.sh ; conda deactivate"
+    alias initconda=". ~/.condainit.sh ; conda deactivate"
 fi
 
 # be explicit about what python interpreter will run pip (use whatever is the current `python`)
