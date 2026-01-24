@@ -166,3 +166,11 @@ alias python=python3
 if [[ -f "$HOME/.bashrc.private" ]]; then
     . "$HOME/.bashrc.private"
 fi
+
+# pnpm
+export PNPM_HOME="/home/john/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
