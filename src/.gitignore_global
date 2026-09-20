@@ -37,3 +37,7 @@ _lotw/
 
 # python venvs
 .venv
+
+# claude
+CLAUDE.md
+.claude/
