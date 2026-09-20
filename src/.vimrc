@@ -218,6 +218,24 @@ augroup END
 
 " }}}2
 
+" tmux pane title {{{2
+" Show the full file path in the tmux pane border while editing,
+" and restore it to the cwd when vim exits.
+if exists('$TMUX')
+    function! s:SetTmuxPaneTitle(title) abort
+        " system() pipes the command's stdout back to vim, so it never
+        " reaches the real terminal; redirect explicitly to /dev/tty.
+        call system('printf ' . shellescape("\033]2;%s\007") . ' ' . shellescape(a:title) . ' > /dev/tty')
+    endfunction
+
+    augroup tmux_pane_title
+        autocmd!
+        autocmd VimEnter,BufEnter,BufFilePost * call s:SetTmuxPaneTitle(expand('%:p'))
+        autocmd VimLeave * call s:SetTmuxPaneTitle(getcwd())
+    augroup END
+endif
+" }}}2
+
 " }}}1
 "
 "
