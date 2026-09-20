@@ -7,7 +7,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin on
 filetype indent on
-colorscheme solarized
 
 " tmux sets bg=light
 if $TERM == 'screen-256color'
