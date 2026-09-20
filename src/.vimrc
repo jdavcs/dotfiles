@@ -19,7 +19,7 @@ let maplocalleader = " " " set LocalLeader
 
 let g:netrw_banner = 0  " do not display title banner in file explorer
 
-" Settings {{{1
+" Settings
 set nocompatible    " no need for old Vi
 set autoread        " set to auto read when file is changed from the outside
 set smartcase       " do not ignore case if pattern contains uppercase letter
@@ -59,7 +59,7 @@ set ruler "status line
 
 set textwidth=110
 
-" Mappings {{{1
+" Mappings
 " switch to N mode
 inoremap jk <Esc>
 
@@ -116,12 +116,11 @@ nnoremap <leader>ss :setlocal spell!<CR>
 
 "reindent file, then go back to where you were
 nnoremap <F7> mqgg=G`q
-" }}}1
 
 " maximize split
 nnoremap <C-W>m <C-W>\|<C-W>_
 
-" Autocommands {{{1
+" Autocommands
 augroup my_filetypedetect 
     autocmd!
     " au BufNewFile,BufRead *.html setf xml  " until I find a better syntax file (but still not sure)
@@ -153,9 +152,8 @@ augroup misc_settings
     autocmd FileType python setlocal foldmethod=indent | nnoremap <space> zA
     autocmd FileType python normal! zR
 augroup END
-" }}}1
 
-" My commands {{{1
+" My commands
 if !exists(":JJ")
     command JJ call s:ToggleWritingMode()
 endif
@@ -173,29 +171,26 @@ endif
 if !exists(":MP")
     command MP hi MatchParen ctermbg=10 ctermfg=LightBlue
 endif
-" }}}1
 
 
-" Plugin settings {{{1
+" Plugin settings
 
 " don't need double indent after open paren in python
 let g:pyindent_open_paren = '&sw'
 
-" vim-timestamp {{{2
+" vim-timestamp
 nnoremap <silent><localleader>ti :TimestampInsert<CR>
 nnoremap <silent><localleader>tu :TimestampUpdate<CR>
-" }}}2
 
-" vim-write {{{2
+" vim-write
 nnoremap <silent><leader>ww :WriteToggleWritingMode<CR>
 nnoremap <silent><leader>nn :WriteToggleLineNumbers<CR>
 nnoremap <silent><leader>nf :set foldcolumn=0<CR>
 
 " visually select line
 nnoremap vv 0v$<CR>
-" }}}2
 
-" vim-journal {{{2
+" vim-journal
 
 augroup vim_journal
     autocmd!
@@ -215,9 +210,8 @@ augroup vim_journal
     autocmd FileType journal nnoremap <Space> za
 augroup END
 
-" }}}2
 
-" tmux pane title {{{2
+" tmux pane title
 " Show the full file path in the tmux pane border while editing,
 " and restore it to the cwd when vim exits.
 if exists('$TMUX')
@@ -233,9 +227,5 @@ if exists('$TMUX')
         autocmd VimLeave * call s:SetTmuxPaneTitle(getcwd())
     augroup END
 endif
-" }}}2
 
-" }}}1
-"
-"
 set ignorecase smartcase
