@@ -216,9 +216,18 @@ augroup END
 " and restore it to the cwd when vim exits.
 if exists('$TMUX')
     function! s:SetTmuxPaneTitle(title) abort
-        " system() pipes the command's stdout back to vim, so it never
-        " reaches the real terminal; redirect explicitly to /dev/tty.
-        call system('printf ' . shellescape("\033]2;%s\007") . ' ' . shellescape(a:title) . ' > /dev/tty')
+        " Ask tmux directly to set the pane title, rather than writing an
+        " OSC escape sequence to /dev/tty: that byte stream is shared with
+        " vim's own screen redraws, and the two can interleave mid-sequence,
+        " leaving stray escape bytes visible on screen for some files.
+        "
+        " job_start (async) instead of system() (synchronous): system()
+        " blocks Vim's main loop while it forks/execs tmux, and if that
+        " happens to overlap Vim's own startup terminal-response handling
+        " (e.g. a pending cursor-position query reply), the response can
+        " arrive after Vim has stopped expecting it and gets typed into
+        " the buffer as literal characters instead of being consumed.
+        call job_start(['tmux', 'select-pane', '-t', $TMUX_PANE, '-T', a:title])
     endfunction
 
     augroup tmux_pane_title
